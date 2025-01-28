@@ -1,0 +1,4 @@
+Un botón que reproduzca un sonido aleatorio de un banco de sonidos diseñados. 
+
+ScrollArea
+Accordion
