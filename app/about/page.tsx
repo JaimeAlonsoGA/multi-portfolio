@@ -1,41 +1,78 @@
 import { Separator } from "@/components/ui/separator";
 import Tag from "../../components/ui/tag";
 import Title from "@/components/ui/title";
-import Timeline from "@/components/timeline";
-import Link from "next/link";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import { Button } from "@/components/ui/button";
+import { TimelinePhone, Timeline } from "@/components/timeline";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext } from "@/components/ui/carousel";
+import Diplomas from "@/components/diplomas";
 
 export default function About() {
     return (
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start justify-center">
-            <span className="w-full flex flex-row items-end justify-between">
+            <span className="w-full flex flex-col-reverse md:flex-row items-start md:items-end md:justify-between">
                 <Title title="About" />
-                <Button variant={"link"} >
-                    Q&A
-                    {/* <IoIosArrowRoundForward /> */}
-                </Button>
+                <Breadcrumb>
+                    <BreadcrumbList>
+                        <BreadcrumbItem>
+                            <DropdownMenu>
+                                <DropdownMenuTrigger className="hover:text-black flex items-center gap-1">
+                                    Home
+                                </DropdownMenuTrigger>
+                                <DropdownMenuContent align="start">
+                                    <DropdownMenuItem>
+                                        <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem>
+                                        <BreadcrumbLink href="/projects">Projects</BreadcrumbLink>
+                                    </DropdownMenuItem>
+                                </DropdownMenuContent>
+                            </DropdownMenu>
+                        </BreadcrumbItem>
+                        <BreadcrumbSeparator />
+                        <BreadcrumbItem>
+                            <BreadcrumbPage><span className="font-semibold">. . .</span></BreadcrumbPage>
+                        </BreadcrumbItem>
+                        <BreadcrumbSeparator />
+                        <BreadcrumbItem>
+                            <BreadcrumbLink href="about/qaa">Q&A</BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbList>
+                </Breadcrumb>
             </span>
-            <span className="max-w-xl text-wrap text-justify font-[family-name:var(--font-geist-mono)]">
-                <p className="text-xs">I’m a multidisciplinary professional with a growing passion for creating modern cross-platform applications and captivating audio experiences.</p>
-            </span>
-            <div className="flex flex-row gap-2">
+            <div className="max-w-full md:max-w-3xl text-balance text-justify font-[family-name:var(--font-geist-mono)]">
+                <p className="text-xs">I am a multidisciplinary professional with a growing passion for creating modern cross-platform software applications and captivating audio experiences for interactive media.</p>
+            </div>
+            <div className="w-full flex flex-wrap md:flex-row gap-2 justify-between">
                 {tags.map((tag, i) =>
                     <div key={tag} className="flex flex-row gap-2">
-                        {i !== 0 && <Separator orientation="vertical" />}
+                        {i !== 0 && <Separator orientation="vertical" className="hidden xl:flex" />}
                         <Tag label={tag} />
                     </div>)}
             </div>
-            <Timeline />
-        </main>
+            <Carousel opts={{ align: "start", loop: true }} orientation="vertical" className="w-full">
+                <CarouselContent className="-mt-1 h-[380px]">
+                    <CarouselItem >
+                        <Timeline />
+                    </CarouselItem>
+                    <CarouselItem>
+                        <Diplomas />
+                    </CarouselItem>
+                </CarouselContent >
+                <CarouselNext />
+            </Carousel >
+            <TimelinePhone />
+        </main >
     )
 }
 
 const tags = [
+    "Software",
     "Applications",
+    "Cross-platform",
     "Sound Design",
     "Music Production",
-    "Interactive Audio",
+    "Interactive Media",
 ]
 
 

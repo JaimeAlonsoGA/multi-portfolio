@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./
 
 const QuestionsAndAnswers = () => {
     return (
-        <Accordion type="single" collapsible>
+        <Accordion type="single" collapsible className="flex flex-col w-full">
             <AccordionItem value="item-1">
                 <AccordionTrigger>About yourself and your professional experience?</AccordionTrigger>
                 <AccordionContent>
