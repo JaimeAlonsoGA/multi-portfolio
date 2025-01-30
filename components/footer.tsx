@@ -12,7 +12,7 @@ const Footer: React.FC = () => (
             <FaLinkedinIn />
             Linkedin
         </a>
-        <a
+        {/* <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://www.linkedin.com/in/jaime360/"
             target="_blank"
@@ -20,7 +20,7 @@ const Footer: React.FC = () => (
         >
             Developer
             <IoIosArrowRoundForward />
-        </a>
+        </a> */}
     </footer>
 )
 

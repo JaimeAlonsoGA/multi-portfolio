@@ -8,7 +8,7 @@ const Diplomas: React.FC = () => {
     return (
         <div className="hidden w-full xl:flex flex-row justify-between gap-4">
             {diplomas.map((diploma, i) =>
-                <Card>
+                <Card key={i}>
                     <CardHeader>
                         <CardTitle>{diploma.subject}</CardTitle>
                         <CardDescription>{diploma.diploma}</CardDescription>

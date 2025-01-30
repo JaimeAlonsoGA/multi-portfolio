@@ -15,7 +15,7 @@ export const Timeline: React.FC = () => {
             <Card>
                 <CardHeader>
                     <CardTitle>Works and studies</CardTitle>
-                    <CardDescription>For more details hover over the lines</CardDescription>
+                    <CardDescription>Hover over the lines for more details </CardDescription>
                 </CardHeader>
                 <CardContent>
                     <div className="flex flex-row">
