@@ -1,4 +1,10 @@
 Un botón que reproduzca un sonido aleatorio de un banco de sonidos diseñados. 
 
-ScrollArea
-Accordion
+Mezclar ambos portfolios. 
+
+Crear una timeline con estudios y experiencia laboral.
+
+Projectos: 
+    Sección sonido y sección desarrollo
+
+Crafting immersive audio experiences.
