@@ -6,10 +6,11 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext } from "@/components/ui/carousel";
 import Diplomas from "@/components/diplomas";
+import Summary from "@/components/summary";
 
 export default function About() {
     return (
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start justify-center">
+        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start justify-center max-w-full md:max-w-4xl">
             <span className="w-full flex flex-col-reverse md:flex-row items-start md:items-end md:justify-between">
                 <Title title="About" />
                 <Breadcrumb>
@@ -40,7 +41,7 @@ export default function About() {
                     </BreadcrumbList>
                 </Breadcrumb>
             </span>
-            <div className="max-w-full md:max-w-3xl text-balance text-justify font-[family-name:var(--font-geist-mono)]">
+            <div className="text-pretty font-[family-name:var(--font-geist-mono)]">
                 <p className="text-xs">I am a multidisciplinary professional with a growing passion for creating modern cross-platform software applications and captivating audio experiences for interactive media.</p>
             </div>
             <div className="w-full flex flex-wrap md:flex-row gap-2 justify-between">
@@ -57,6 +58,9 @@ export default function About() {
                     </CarouselItem>
                     <CarouselItem>
                         <Diplomas />
+                    </CarouselItem>
+                    <CarouselItem>
+                        <Summary />
                     </CarouselItem>
                 </CarouselContent >
                 <CarouselNext />

@@ -6,7 +6,7 @@ import dam from "@/public/images/dam.png";
 
 const Diplomas: React.FC = () => {
     return (
-        <div className="hidden w-full xl:flex flex-row justify-between gap-4">
+        <div className="flex flex-row justify-between gap-4">
             {diplomas.map((diploma, i) =>
                 <Card key={i}>
                     <CardHeader>
@@ -18,11 +18,6 @@ const Diplomas: React.FC = () => {
                             <Image src={diploma.image} alt="Diploma" width={diploma.width} height={diploma.height} />
                         </div>
                     </CardContent>
-                    {/* <CardFooter className="flex flex-row justify-between items-end">
-                        <Button>
-                            Resume
-                        </Button>
-                    </CardFooter> */}
                 </Card>
             )}
         </div >
