@@ -1,12 +1,12 @@
 import QuestionsAndAnswers from "@/components/qaa";
-import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import Title from "@/components/ui/title";
 
 export default function Qaa() {
     return (
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start justify-center">
-            <span className="w-full flex flex-row items-end justify-between">
+            <div className="w-full flex flex-row items-end justify-between">
                 <Title title="About" />
                 <Breadcrumb>
                     <BreadcrumbList>
@@ -31,11 +31,11 @@ export default function Qaa() {
                         </BreadcrumbItem>
                         <BreadcrumbSeparator />
                         <BreadcrumbItem>
-                            <BreadcrumbPage><span className="font-semibold">. . .</span></BreadcrumbPage>
+                            <BreadcrumbPage><p className="font-semibold">. . .</p></BreadcrumbPage>
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
-            </span>
+            </div>
             <QuestionsAndAnswers />
         </main>
     )

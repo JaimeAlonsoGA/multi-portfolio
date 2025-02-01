@@ -14,7 +14,8 @@ export default function Home() {
         <li className="mb-2">Creating captivating audio experiences —
           <code className={CODE_TEXT}>
             interactive media
-          </code></li>
+          </code>
+        </li>
         <li className="mb-2">Developing cutting-edge cross-platform applications —
           <code className={"bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold"}>
             software

@@ -67,7 +67,7 @@ export const Timeline: React.FC = () => {
                     })}
                 </CardContent>
                 <CardFooter className="flex flex-row justify-between items-end">
-                    <p className="text-xs text-gray-500 font-light">Personal or non-professional education/work is not shown here. For more info download Resume or go to <Link className="hover:underline" href="../projects">Projects</Link></p>
+                    <span className="text-xs text-gray-500 font-light">Personal or non-professional education/work is not shown here. For more info download Resume or go to <Link className="hover:underline" href="../projects">Projects</Link></span>
                     <Button>
                         Resume
                     </Button>

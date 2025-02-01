@@ -7,11 +7,12 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Carousel, CarouselContent, CarouselItem, CarouselNext } from "@/components/ui/carousel";
 import Diplomas from "@/components/diplomas";
 import Summary from "@/components/summary";
+import Skills from "@/components/skills";
 
 export default function About() {
     return (
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start justify-center max-w-full md:max-w-4xl">
-            <span className="w-full flex flex-col-reverse md:flex-row items-start md:items-end md:justify-between">
+            <div className="w-full flex flex-col-reverse md:flex-row items-start md:items-end md:justify-between">
                 <Title title="About" />
                 <Breadcrumb>
                     <BreadcrumbList>
@@ -40,7 +41,7 @@ export default function About() {
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
-            </span>
+            </div>
             <div className="text-pretty font-[family-name:var(--font-geist-mono)]">
                 <p className="text-xs">I am a multidisciplinary professional with a growing passion for creating modern cross-platform software applications and captivating audio experiences for interactive media.</p>
             </div>
@@ -58,6 +59,9 @@ export default function About() {
                     </CarouselItem>
                     <CarouselItem>
                         <Diplomas />
+                    </CarouselItem>
+                    <CarouselItem>
+                        <Skills />
                     </CarouselItem>
                     <CarouselItem>
                         <Summary />

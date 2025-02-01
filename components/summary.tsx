@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
-import portrait from "@/public/images/portrait.jpg";
+import portrait from "@/public/images/cat.png";
 import Link from "next/link";
 
 const Summary: React.FC = () => {
@@ -29,7 +29,7 @@ const Summary: React.FC = () => {
       </Card>
       <Card className="flex basis-2/6 items-center justify-center">
         <CardContent className="text-justify text-sm">
-          <Image src={portrait} alt="Portrait" width={150} height={150} className="rounded-xl grayscale" />
+          <Image src={portrait} alt="Portrait" width={150} height={150} className="rounded-xl " />
         </CardContent>
       </Card>
     </div>
