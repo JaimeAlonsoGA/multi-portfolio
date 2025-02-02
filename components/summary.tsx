@@ -20,11 +20,11 @@ const Summary: React.FC = () => {
             Also, through my studies, I have discovered how much there is yet to discover and the constant process of growth and innovation that comes with passion.
             <br />
             <br />
-            Mastering one field is valuable—bridging two is powerful.
+            I belive the most important thing is the attitude overall.
           </p>
         </CardContent>
         <CardFooter className="text-gray-500 font-light text-xs">
-          <span>If you already have some questions, go to the <Link className="hover:underline" href="./qaa">Q&A</Link> section.</span>
+          <span>If you have some questions, go to the <Link className="hover:underline" href="./qaa">Q&A</Link> section.</span>
         </CardFooter>
       </Card>
       <Card className="flex basis-2/6 items-center justify-center">

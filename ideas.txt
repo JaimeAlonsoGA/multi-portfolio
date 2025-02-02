@@ -16,7 +16,7 @@ Skills:
     Full-stack development
         Backend 
         Frontend
-            
+
         Stack:
             Next.js 
             React.js
@@ -49,3 +49,5 @@ Skills:
 As a dual professional, it may seem that my skills are divided and have no individual value.
 In reality, my mastery of both software and audio is what makes me unique, and I have proven expertise in both. 
 Through my studies, I have discovered how much there is to discover and the constant process of growth and innovation that comes with passion.
+
+Mastering one field is valuable—bridging two is powerful.

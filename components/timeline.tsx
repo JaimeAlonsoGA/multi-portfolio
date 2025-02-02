@@ -42,7 +42,7 @@ export const Timeline: React.FC = () => {
                                         <p>●</p>
                                     </HoverCardTrigger>
                                 </div>
-                                <HoverCardContent>
+                                <HoverCardContent side={item.side as "bottom" | "top" | "right" | "left" || "bottom"}>
                                     <div className="flex justify-between space-x-4">
                                         {/* <Avatar>
                                     <AvatarImage src="https://github.com/vercel.png" />
@@ -110,8 +110,8 @@ export const TimelinePhone = () => {
 */
 
 const timeline = [
-    { from: 2020, to: 2022, milestone: "Sound Engineering and Music Production", where: "Abbey Road Institute Amsterdam", description: "Enrolled on Abbey Road Institue Amsterdam to learn Sound Engineering and Music Production", tag: "e" },
-    { from: 2022, to: 2024, milestone: "Sound Engineer", where: "Hey Mickey!", description: "Worked on Hey Mickey! as Sound Engineer supervising private events", tag: "w" },
-    { from: 2023, to: 2026, milestone: "Cross-platform Application Development", where: "University Francisco De Victoria", description: "Enrolled on Universidad Francisco De Victoria to learn Cross-platform Application Development", tag: "e" },
-    { from: 2024, to: 2026, milestone: "Full-stack Software Developer", where: "MIRTO Group", description: "Worked on MIRTO Group designing and developing end-to-end software solutions", tag: "w" },
+    { from: 2020, to: 2022, milestone: "Sound Engineering and Music Production", where: "Abbey Road Institute Amsterdam", description: "Enrolled on Abbey Road Institue Amsterdam to learn Sound Engineering and Music Production", tag: "e", side: "bottom" },
+    { from: 2022, to: 2024, milestone: "Sound Engineer", where: "Hey Mickey!", description: "Worked on Hey Mickey! as Sound Engineer supervising private events", tag: "w", side: "bottom" },
+    { from: 2023, to: 2026, milestone: "Cross-platform Application Development", where: "University Francisco De Victoria", description: "Enrolled on Universidad Francisco De Victoria to learn Cross-platform Application Development", tag: "e", side: "top" },
+    { from: 2024, to: 2026, milestone: "Full-stack Software Developer", where: "MIRTO Group", description: "Worked on MIRTO Group designing and developing end-to-end software solutions", tag: "w", side: "top" },
 ]

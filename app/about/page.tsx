@@ -52,24 +52,21 @@ export default function About() {
                         <Tag label={tag} />
                     </div>)}
             </div>
-            <Carousel opts={{ align: "start", loop: true }} orientation="vertical" className="w-full">
+            <Carousel opts={{ align: "start", loop: true }} orientation="vertical" className="hidden xl:flex">
                 <CarouselContent className="-mt-1 h-[380px]">
                     <CarouselItem >
                         <Timeline />
                     </CarouselItem>
                     <CarouselItem>
-                        <Diplomas />
-                    </CarouselItem>
-                    <CarouselItem>
                         <Skills />
-                    </CarouselItem>
-                    <CarouselItem>
-                        <Summary />
                     </CarouselItem>
                 </CarouselContent >
                 <CarouselNext />
             </Carousel >
-            <TimelinePhone />
+            <div className="xl:hidden flex flex-col gap-8">
+                <TimelinePhone />
+                <Skills />
+            </div>
         </main >
     )
 }
