@@ -6,7 +6,7 @@ const Skills: React.FC = () => {
             <Card className="flex flex-col w-full">
                 <CardHeader>
                     <CardTitle>Skills</CardTitle>
-                    <CardDescription>What I do and how I do it</CardDescription>
+                    <CardDescription>Topics of interest and Tools</CardDescription>
                 </CardHeader>
                 <CardContent className="text-justify text-balance text-sm">
                     <div className="w-full flex flex-col gap-4 xl:flex-row justify-between text-balance">

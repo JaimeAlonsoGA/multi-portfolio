@@ -5,9 +5,9 @@ import Title from "@/components/ui/title";
 
 export default function Qaa() {
     return (
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start justify-center">
-            <div className="w-full flex flex-row items-end justify-between">
-                <Title title="About" />
+        <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start justify-center max-w-full md:max-w-4xl md:w-full">
+            <div className="w-full flex flex-col-reverse md:flex-row items-start md:items-end md:justify-between">
+                <Title title="Q&A" />
                 <Breadcrumb>
                     <BreadcrumbList>
                         <BreadcrumbItem>
@@ -37,7 +37,7 @@ export default function Qaa() {
                 </Breadcrumb>
             </div>
             <QuestionsAndAnswers />
-        </main>
+        </section>
     )
 }
 

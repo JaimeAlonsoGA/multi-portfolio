@@ -11,7 +11,7 @@ import Skills from "@/components/skills";
 
 export default function About() {
     return (
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start justify-center max-w-full md:max-w-4xl">
+        <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start justify-center max-w-full md:max-w-4xl">
             <div className="w-full flex flex-col-reverse md:flex-row items-start md:items-end md:justify-between">
                 <Title title="About" />
                 <Breadcrumb>
@@ -67,7 +67,7 @@ export default function About() {
                 <TimelinePhone />
                 <Skills />
             </div>
-        </main >
+        </section >
     )
 }
 

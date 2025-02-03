@@ -5,9 +5,9 @@ interface ContainerProps {
 }
 
 const Container: React.FC<ContainerProps> = ({ children }) => (
-    <div className="flex flex-col justify-center items-center h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <main className="relative flex flex-col justify-center items-center h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         {children}
-    </div>
+    </main>
 )
 
 export default Container;
