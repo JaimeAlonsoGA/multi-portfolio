@@ -20,13 +20,14 @@ const QuestionsAndAnswers = () => {
 }
 
 const questionsAndAnswers = [
-    { q: "About yourself and your professional experience?", a: "Since 2015 in music production, since 2022 in sound design for interactive media and 2023 in software development." },
-    { q: "Why I decided to study cross-plarform application developemnt after an audio related education?", a: "I wanted to expand my skillset and create my own applications." },
-    { q: "Do I spezialice in audio applications?", a: "No, I spezialice in cross-platform applications and audio and music for Interactive media" },
-    { q: "Can I perform as a technical sound designer or audio programmer?", a: "Yes, I can also implement audio using middleware applications." },
-    { q: "I which area would I like to work most?", a: "I can eather developing cross-platforms applications or producing and implementing audio and music for interactive media" },
-    { q: "What does cross-platform applications and interactive media means?", a: "Examples of these are web or phone applications and video games." },
-    { q: "What I think is my most valuable skill?", a: "My restless ambition to improve and learn " },
+    { q: "How would you describe yourself with a few tags", a: "Entrepreneur, creative, international, positive, peripheral-minded, apprentice, persistent" },
+    { q: "Why did I decide to study cross-platform application development after an audio-related education?", a: "I believe that coding is the language of today, and I wanted to speak in my own words." },
+    { q: "Do I specialize in audio software applications?", a: "No, I specialize in cross-platform applications and creating and implementing audio and music into interactive media." },
+    { q: "Can I work as a technical sound designer or audio programmer?", a: "Yes, I can implement audio using middleware solutions like Wwise and FMOD." },
+    { q: "In which area would I most like to work?", a: "Both fields are drops of honey for me." },
+    { q: "What do I mean by cross-platform applications and interactive media?", a: "Cross-platform applications include web, mobile, and standalone apps, while interactive media refers to experiences like video games." },
+    { q: "What do I consider my most valuable skill?", a: "My relentless ambition to continually improve and learn." },
+    { q: "What is my total experience?", a: "I started producing music in 2015, began exploring interactive media in 2021, and ventured into software development in 2023." },
 ]
 
 export default QuestionsAndAnswers;

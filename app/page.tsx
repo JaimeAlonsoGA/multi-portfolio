@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-      <div className="flex flex-row gap-4 text-sm text-gray-500 text-center">
+      <div className="flex flex-row gap-4 text-sm text-gray-500">
         <Link href="/about">About</Link>
         <Link href="/projects">Projects</Link>
       </div>
