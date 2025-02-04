@@ -8,7 +8,7 @@ export default function Projets() {
     return (
         <section className="flex flex-col gap-4 row-start-2 items-center sm:items-start justify-center max-w-full md:max-w-4xl">
             <div className="w-full flex flex-col-reverse md:flex-row items-start md:items-end md:justify-between">
-                <div>
+                <div className="flex flex-col-reverse md:flex-col items-start gap-4">
                     <div className="flex flex-row gap-8 text-sm text-gray-500 text-left">
                         <Link href="projects/software">Software</Link>
                         <Link href="projects/audio">Audio</Link>
