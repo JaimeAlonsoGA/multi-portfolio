@@ -36,6 +36,10 @@ export default function Projets() {
                         <BreadcrumbItem>
                             <BreadcrumbPage><span className="font-semibold">. . .</span></BreadcrumbPage>
                         </BreadcrumbItem>
+                        <BreadcrumbSeparator />
+                        <BreadcrumbItem>
+                            <BreadcrumbLink href="about/qaa">Q&A</BreadcrumbLink>
+                        </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
             </div>

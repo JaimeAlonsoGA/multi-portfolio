@@ -32,8 +32,8 @@ const Skills: React.FC = () => {
 
 const skills = [
     { skill: "Frontend", tools: ["HTML", "CSS", "JavaScript", "React", "React Native", "Next.js"] },
-    { skill: "Backend", tools: ["Node.js", "Express.js", "GraphQL", "Relational Data Bases"] },
     { skill: "Audio", tools: ["Cubase", "VSTs", "Effects", "Wwise", "FMOD", "Microphones", "Instruments"] },
+    { skill: "Backend", tools: ["Node.js", "Express.js", "GraphQL", "Relational Data Bases"] },
     { skill: "Other", tools: ["Git", "GitHub", "Github Copilot", "VS Code", "Figma", "Unreal Engine 5", "Unity"] }
 ]
 

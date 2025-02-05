@@ -1,7 +1,8 @@
 'use client'
 
 import { IoMdPlay } from "react-icons/io";
-import { Button } from "./ui/button";
+import { Button } from "./ui/button"
+
 
 const Header: React.FC = () => {
     return (
