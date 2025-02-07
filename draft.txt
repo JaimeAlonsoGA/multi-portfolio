@@ -1,4 +1,4 @@
-Un botón que reproduzca un sonido aleatorio de un banco de sonidos diseñados. 
+draUn botón que reproduzca un sonido aleatorio de un banco de sonidos diseñados. 
 
 Mezclar ambos portfolios. 
 
@@ -63,3 +63,18 @@ I which area would I like to work most?
 
 What I think is my most valuable skill?
 
+
+      <div className="text-pretty font-[family-name:var(--font-geist-mono)]">
+        <p className="text-xs">
+          I am a multidisciplinary professional with a growing passion for
+          creating modern cross-platform software applications and captivating
+          audio experiences for interactive media.
+        </p>
+      </div>
+
+      const skills = [
+    { skill: "Frontend", tools: ["JavaScript", "React", "React Native", "Next.js"] },
+    { skill: "Audio", tools: ["Cubase", "Wwise", "FMOD"] },
+    { skill: "Backend", tools: ["Node.js", "Express.js", "GraphQL", "Relational Data Bases"] },
+    { skill: "Other", tools: ["Git", "GitHub", "Github Copilot", "VS Code", "Figma", "Unreal Engine 5", "Unity"] }
+]
