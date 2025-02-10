@@ -58,7 +58,7 @@ export const Timeline: React.FC = () => {
                       <Icon className="w-4 text-gray-600 group-hover:text-black" />
                       <p>●</p>
                     </div>
-                    <span className="border border-dashed border-gray-200 w-full group-hover:border-gray-400" />
+                    <span className="border border-gray-200 w-full group-hover:border-gray-400" />
                     <p>●</p>
                   </HoverCardTrigger>
                 </div>

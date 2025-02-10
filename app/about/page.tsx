@@ -25,6 +25,7 @@ import {
 import Diplomas from "@/components/diplomas";
 import Summary from "@/components/summary";
 import Skills from "@/components/skills";
+import Skill from "@/components/skills";
 
 export default function About() {
   return (
@@ -65,15 +66,16 @@ export default function About() {
           <CarouselItem>
             <Timeline />
           </CarouselItem>
-          <CarouselItem>
-            <Skills />
-          </CarouselItem>
+          {skillset.map((item, i) => (
+            <CarouselItem key={i} className="h-full flex flex-row">
+              <Skill skillset={item} />
+            </CarouselItem>
+          ))}
         </CarouselContent>
         <CarouselNext />
       </Carousel>
       <div className="xl:hidden flex flex-col gap-8">
         <TimelinePhone />
-        <Skills />
       </div>
     </section>
   );
@@ -88,17 +90,43 @@ const tags = [
   "Interactive Media",
 ];
 
-// < Carousel opts = {{ loop: true }} className = "flex flex-col w-full max-w-xl break-words justify-center items-center" >
-//             <CarouselContent>
-//                 <CarouselItem>
-//                     <div className="flex flex-row gap-4">
-//                         <Image src={diploma} alt="Diploma" width={200} height={200} />
-//                         <p className="text-xs">2020-2022 Advanced Diploma on <span className="font-semibold">Sound Engineerind and Music Production</span> on Abbey Road Institute Amsterdam</p>
-//                     </div>
-//                 </CarouselItem>
-//                 <CarouselItem>
-//                 </CarouselItem>
-//             </CarouselContent>
-//             <CarouselPrevious />
-//             <CarouselNext />
-//         </Carousel >
+const skillset = [
+  {
+    field: "Software",
+    skills: [
+      "Develope end-to-end cross-platform apps —web, phone, desktop",
+      "Design modern, responsive and user-friendly apps",
+      "Create software solutions usign modern flows",
+    ],
+    keywords: [
+      "Full-stack",
+      "Cross-platform apps",
+      "UX",
+      "Solutions",
+      "Development",
+    ],
+    about: "De-coding the future with the lastest techs",
+  },
+  {
+    field: "Audio",
+    skills: [
+      "Compose, record, mix and master multi-purpose music",
+      "Design sound effects and atmospheres",
+      "Implement dynamic audio into interactive media",
+    ],
+    keywords: [
+      "Sound design",
+      "Video games",
+      "Music production",
+      "Sound engineering",
+    ],
+    about: "adios",
+  },
+] as Skillset[];
+
+export interface Skillset {
+  field: string;
+  skills: string[];
+  keywords: string[];
+  about: string;
+}
